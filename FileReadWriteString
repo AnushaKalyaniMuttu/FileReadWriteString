@@ -1,0 +1,3 @@
+Path filePath = Files.writeString(Files.createTempFile(tempDir, "demo", ".txt"), "Sample text");
+String fileContent = Files.readString(filePath);
+assertThat(fileContent).isEqualTo("Sample text");
